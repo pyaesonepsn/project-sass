@@ -1,2 +1,2 @@
 # techdegree-project-4
- Project using sass
+In this project, the sass is used to output css. 

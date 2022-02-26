@@ -1,0 +1,29 @@
+@mixin avatar ($dim){
+  max-width: $dim;
+  max-height: $dim;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin frame ($w, $brd){
+  max-width: $w;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: $brd;
+}
+
+@mixin logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin themes($map) {
+  @each $theme, $color in $map{
+    &.#{$theme} {
+      color: $color;
+    }
+  }
+}
